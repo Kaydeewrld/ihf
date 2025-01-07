@@ -1,13 +1,4 @@
-/*
-Theme Name:       SlickBiz - Bootstrap 4 Template
-Author:           UIdeck
-Author URI:       http://uideck.com
-Text Domain:      UIdeck
-Domain Path:      /languages/
-*/
-/* ==========================================================================
-   IMPORT GOOGLE FONTS
-   ========================================================================== */
+
 @import url("https://fonts.googleapis.com/css?family=Rubik:400,400i,500");
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600");
 /* ==========================================================================
@@ -130,7 +121,10 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   box-shadow: 0px 8px 9px 0px rgba(96, 94, 94, 0.17);
   width: 160px;
   height: 50px;
-  padding: 14px 15px; }
+  align-items: center;
+  justify-content: center;
+  padding: 14px 15px; 
+}
 
 .btn-common:hover {
   color: #fff;
@@ -348,8 +342,8 @@ button:focus {
   cursor: pointer;
   text-align: center;
   border-radius: 4px;
-  background: #5533ff;
-  background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%);
+  background: #3274cf;
+  background: linear-gradient(95deg, #3274cf 40%, #3274cf 100%);
   box-shadow: 0px 8px 9px 0px rgba(96, 94, 94, 0.17);
   z-index: 9999999; }
 
@@ -369,8 +363,8 @@ button:focus {
   color: #fff; }
 
 .menu-bg {
-  background: #5533ff;
-  background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%) !important;
+  background: #3274cf;
+  background: linear-gradient(95deg, #3274cf 40%, #3274cf 100%) !important;
   box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.1);
   z-index: 9999;
   padding: 5px;
@@ -382,10 +376,10 @@ button:focus {
 
 .menu-bg .menu-button:hover {
   cursor: pointer;
-  color: #3c9cfd; }
+  color: #3274cf; }
 
 .menu-bg .logo-menu a {
-  color: #3c9cfd; }
+  color: #3274cf; }
 
 .menu-bg .navbar-nav .nav-link {
   color: #ffffff !important; }
@@ -461,8 +455,8 @@ button:focus {
     height: 100%;
     top: 0px;
     left: 0px;
-    background: #5533ff;
-    background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%);
+    background: #3274cf;
+    background: linear-gradient(95deg, #3274cf 40%, #3274cf 100%);
     -webkit-transform: skewY(-12deg);
     transform: skewY(-12deg);
     -webkit-transform-origin: 0;
@@ -475,20 +469,20 @@ button:focus {
       left: 16.66666%;
       left: calc(calc(100% / 3) / 2);
       right: auto;
-      background: #5533ff;
-      background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%);
+      background: #3274cf;
+      background: linear-gradient(95deg, #3274cf 40%, #3274cf 100%);
       height: 200px; }
     .hero-area .overlay :nth-child(2) {
       width: 33.33333%;
       width: calc(100% /3);
       bottom: 0;
-      background: #5533ff;
-      background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%);
+      background: #3274cf;
+      background: linear-gradient(95deg, #3274cf 40%, #3274cf 100%);
       position: absolute;
       height: 155px;
       left: 3%; }
   .hero-area .contents {
-    padding: 220px 0; }
+    padding: 180px 0; }
     .hero-area .contents h2 {
       color: #fff;
       font-size: 38px;
@@ -776,13 +770,13 @@ button:focus {
   #showcase .showcase-text p {
     color: #fff; }
   #showcase .gradient-bg {
-    background: #5533ff;
-    background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%);
+    background: #3274cf;
+    background: linear-gradient(95deg, #3274cf 40%, #3274cf 100%);
     padding: 119px 0px 80px 0px; }
   #showcase .showcase-slider .owl-controls .owl-page.active span, #showcase .showcase-slider .owl-controls.clickable .owl-page:hover span {
     filter: Alpha(Opacity=100);
     opacity: 1;
-    background: #3c9cfd; }
+    background: #3274cf; }
   #showcase .showcase-slider .owl-controls .owl-page span {
     display: block;
     width: 12px;
@@ -793,7 +787,7 @@ button:focus {
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
-    background: #3c9cfd; }
+    background: #3274cf; }
   #showcase .showcase-slider .owl-controls .active span {
     width: 15px;
     height: 15px; }
@@ -826,7 +820,7 @@ button:focus {
       color: #fff;
       font-size: 20px; }
   #showcase .showcase-slider .screenshot-thumb > .hover-content {
-    background-color: #3c9cfd;
+    background-color: transparent;
     opacity: 0.90;
     height: 85%;
     left: 0;
