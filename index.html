@@ -83,6 +83,86 @@
       margin: 0;
     }
     </style>
+     <style>
+      body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+      }
+
+      .footer {
+          background-color: #111;
+          color: #fff;
+          padding: 40px 20px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center;
+      }
+
+      .social-icons {
+          display: flex;
+          gap: 15px;
+      }
+
+      .social-icons a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: #333;
+          color: #fff;
+          text-decoration: none;
+          font-size: 18px;
+          transition: background-color 0.3s;
+      }
+
+      .social-icons a:hover {
+          background-color: #555;
+      }
+
+      .logo-container {
+          text-align: center;
+          flex: 1;
+          margin: 20px 0;
+      }
+
+      .logo {
+          width: 120px;
+          height: auto;
+      }
+
+      .menu {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+          justify-content: center;
+      }
+
+      .menu a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 16px;
+          transition: color 0.3s;
+      }
+
+      .menu a:hover {
+          color: #999;
+      }
+
+      @media (max-width: 768px) {
+          .footer {
+              flex-direction: column;
+              text-align: center;
+          }
+
+          .social-icons {
+              justify-content: center;
+              margin-bottom: 20px;
+          }
+      }
+  </style>
 
   </head>
   
@@ -265,31 +345,33 @@
         <!-- Start Row -->
         <div class="row featured-bg">
          <!-- Start Col -->
-          <div class="col-lg-6 col-md-6 col-xs-12 p-0">
-             <!-- Start Fetatures -->
-            <div class="feature-item featured-border1">
-               <div class="feature-icon float-left">
-                 <i class="lni-graduation"></i>
-               </div>
-               <div class="feature-info float-left">
-                 <h4>Children, Teens Empowerment </h4>
-                 <p>Providing educational materials  <br> and support for underprivileged children to thrive academically. </p>
-               </div>
+         <div class="col-lg-6 col-md-6 col-xs-12 p-0">
+          <!-- Start Fetatures -->
+         <div class="feature-item featured-border1">
+            <div class="feature-icon float-left">
+              <i class="lni-graduation"></i>
             </div>
-            <!-- End Fetatures -->
-          </div>
+            <div class="feature-info float-left">
+              <h4>Children Empowerment</h4>
+              <p>Providing educational   <br> materials
+                and support <br> for underprivileged children.</p>
+            </div>
+         </div>
+         <!-- End Fetatures -->
+       </div>
            <!-- End Col -->
           
          <!-- Start Col -->
-          <div class="col-lg-6 col-md-6 col-xs-12 p-0">
+         <div class="col-lg-6 col-md-6 col-xs-12 p-0">
              <!-- Start Fetatures -->
-            <div class="feature-item featured-border2">
+            <div class="feature-item featured-border1">
                <div class="feature-icon float-left">
                  <i class="lni-heart"></i>
                </div>
                <div class="feature-info float-left">
-                 <h4>Empowerment for Widow</h4>
-                 <p>Delivering essential  receive care and compassion for less privileged widows <br> through innovations.</p>
+                 <h4>
+                  Empowerment for Widow</h4>
+                 <p>Delivering essential receive   <br> care and compassion for<br> less privileged widows.</p>
                </div>
             </div>
             <!-- End Fetatures -->
@@ -304,7 +386,7 @@
                  <i class="lni-users"></i>
                </div>
                <div class="feature-info float-left">
-                 <h4>Support for The Girl Child</h4>
+                 <h4>Support for Women</h4>
                  <p>Focusing on empowering   <br> young girls through education and<br> skill-building programs.</p>
                </div>
             </div>
@@ -651,7 +733,9 @@
                   <textarea class="form-control" id="message"  name="message" placeholder="Write Message" rows="4" data-error="Write your message" required></textarea>
                   <div class="help-block with-errors"></div>
                 </div>
-                <div class="submit-button" style=" left: 42%; position: relative; ">
+                <div class="submit-button" style="  display: flex;
+                justify-content: center;
+                align-items: center; ">
                   <button class="btn btn-common" id="submit" type="submit">Submit</button>
                   <div id="msgSubmit" class="h3 hidden"></div> 
                   <div class="clearfix"></div> 
@@ -681,90 +765,29 @@
     <!-- Contact Us Section End -->
 
     <!-- Footer Section Start -->
-    <footer>
-      <!-- Footer Area Start -->
-      <section id="footer-Content">
-        <div class="container">
-          <!-- Start Row -->
-          <div class="row">
+    <footer class="footer">
+      <!-- Social Icons -->
+      <div class="social-icons">
+          <a href="https://www.tiktok.com/ihffoundation1" target="_blank" aria-label="TikTok" class="lni-youtube lni"></a>
+          <a href="https://www.facebook.com/ihffoundation1" target="_blank" aria-label="Facebook" class="lni-facebook"></a>
+          <a href="https://www.instagram.com/ihffoundation1" target="_blank" aria-label="Instagram" class="lni-instagram"></a>
+          <a href="https://www.twitter.com/ihffoundation1" target="_blank" aria-label="Twitter" class="lni-twitter"></a>
+      </div>
 
-          <!-- Start Col -->
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
-              
-              <div class="footer-logo">
-               <img src="Logo_A-White-removebg-preview.png" style="width: 121px; height: 121px;" alt="">
-              </div>
-            </div>
-             <!-- End Col -->
-              <!-- Start Col -->
-            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 col-mb-12">
-              <div class="widget">
-                <h3 class="block-title">Company</h3>
-                <ul class="menu">
-                  <li><a href="ihffoundation.org">  - Home</a></li>
-                  <li><a href="#business-plan">- About Us</a></li>
-                  <li><a href="#showcase">- Gallery</a></li>
-                  <li><a href="#features">- Programs</a></li>
-                </ul>
-              </div>
-            </div>
-             <!-- End Col -->
-              <!-- Start Col -->
-            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 col-mb-12">
-              <div class="widget">
-                <h3 class="block-title">Donate</h3>
-                <ul class="menu">
-                  <li><a href="https://donate-ng.com/campaign/back-to-school-program-ifh">  - Donate</a></li>
-                  <li><a href="#upcoming-programs">- Programs</a></li>
-                  <li><a style="margin-right: 25px;  font-size: 2rem;" href="" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                  <a style="font-size: 2rem;" href="https://twitter.com/ihffoundation1" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
-                  <li style="margin-top: 8px;"><a style="margin-right: 25px; font-size: 2rem; margin-top: 15px;" target="_blank" href="https://instagram.com/ihffoundation1" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                 <a style="font-size: 2rem;" target="_blank" href="https://tiktok.com/ihffoundation" aria-label="Tiktok"><i class="fab fa-tiktok"></i></a></li>
-                </ul>
-              </div>
-            </div>
-           
-             <!-- End Col -->
-              <!-- Start Col -->
-          
-             <!-- End Col -->
-              <!-- Start Col -->
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
-              <div class="widget">
-                <h3 class="block-title">Subscribe Now</h3>
-                <p>Join our community and receive exclusive updates on our initiatives. </p>
-                <div class="subscribe-area">
-                  <input type="email" class="form-control" placeholder="Enter Email">
-                  <span><i class="lni-chevron-right"></i></span>
-                </div>
-              </div>
-            </div>
-            <!-- End Col -->
-          </div>
-          <!-- End Row -->
-        </div>
-        <!-- Copyright Start  -->
+      <!-- Logo -->
+      <div class="logo-container">
+          <img src="Logo_A-White-removebg-preview.png" alt="Company Logo" class="logo">
+      </div>
 
-        <div class="copyright">
-          <div class="container">
-            <!-- Star Row -->
-            <div class="row">
-              <div class="col-md-12">
-                <div class="site-info text-center">
-                  <p>Crafted by <a href="https://tritron.com.ng" rel="nofollow">kaydee</a></p>
-                </div>              
-                
-              </div>
-              <!-- End Col -->
-            </div>
-            <!-- End Row -->
-          </div>
-        </div>
-      <!-- Copyright End -->
-      </section>
-      <!-- Footer area End -->
-      
-    </footer>
+      <!-- Menu -->
+      <nav class="menu">
+          <a href="index.html">Home</a>
+          <a href="#business-plan">About Us</a>
+          <a href="#features">Gallery</a>
+          <a href="#showcase">Programs</a>
+          <a target="_blank" href="https://donate-ng.com/campaign/back-to-school-program-ifh">Donate</a>
+      </nav>
+  </footer>
     <!-- Footer Section End --> 
 
 
